@@ -16,7 +16,7 @@ jobs:
 
       - name: Download base APK (release tag "base")
         run: |
-          gh release download base --repo "$GITHUB_REPOSITORY" --pattern '*.apk' --output input.apk --clobber
+          gh release download Base --repo "$GITHUB_REPOSITORY" --pattern '*.apk' --output input.apk --clobber
           ls -la input.apk
 
       - name: Write sources
